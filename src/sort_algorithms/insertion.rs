@@ -1,6 +1,9 @@
-/// Sorts a mutable vector of integers in ascending order using the Insertion Sort algorithm.
+/// Sorts a mutable vector of integers in ascending order using the Insertion 
+/// Sort algorithm.
 ///
-/// This function implements Insertion Sort, which iterates through the vector, removing one unsorted element at a time and inserting it into its correct position within the sorted sub-list at the front of the vector.
+/// This function implements Insertion Sort, which iterates through the vector, 
+/// removing one unsorted element at a time and inserting it into its correct 
+/// position within the sorted sub-list at the front of the vector.
 ///
 /// # Arguments
 ///

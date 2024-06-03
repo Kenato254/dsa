@@ -10,3 +10,4 @@
 /// (Specific details about functions in this module can be added as needed based on their implementation)
 mod sort_algorithms;
 mod two_pointer_technique;
+mod shuffle_algorithms;

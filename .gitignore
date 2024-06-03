@@ -1,1 +1,7 @@
+# Rust
 /target
+
+# Python
+*.py
+.python-version
+.mypy_cache

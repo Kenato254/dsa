@@ -23,7 +23,3 @@ Rust's fusion of performance, safety, and expressiveness creates an ideal enviro
 Your contributions and feedback are highly appreciated! Whether it's suggesting improvements to code, sharing insights on problem-solving approaches, or recommending learning resources, your input contributes to our collective growth.
 
 Feel free to engage by opening issues, submitting pull requests, or reaching out with your thoughts, questions, or suggestions.
-
-## License
-
-This repository is licensed under the [insert license here]. See the [LICENSE](LICENSE) file for details.

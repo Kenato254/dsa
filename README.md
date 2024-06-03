@@ -17,9 +17,3 @@ In the world of software development, proficiency in data structures and algorit
 ## Why Rust?
 
 Rust's fusion of performance, safety, and expressiveness creates an ideal environment for mastering data structures and algorithms (DSA). Understanding Rust's underlying concepts not only enhances proficiency in DSA but also fosters a deeper comprehension of modern systems programming principles.
-
-## Contribution and Feedback
-
-Your contributions and feedback are highly appreciated! Whether it's suggesting improvements to code, sharing insights on problem-solving approaches, or recommending learning resources, your input contributes to our collective growth.
-
-Feel free to engage by opening issues, submitting pull requests, or reaching out with your thoughts, questions, or suggestions.

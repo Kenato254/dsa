@@ -1,6 +1,6 @@
 # Rust
 /target
-
+insertion.rs
 # Python
 *.py
 .python-version

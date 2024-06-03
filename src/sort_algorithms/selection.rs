@@ -11,22 +11,20 @@
 ///
 /// * `arr` - A mutable reference to the vector to be sorted. The elements must be
 
-pub fn sort(arr: &mut Vec<i32>) {
+pub fn sort<T: Ord>(arr: &mut [T]) {
     let length = arr.len();
-    let (mut current, mut smallest) = (0, 0);
+    let (mut current, mut minimum) = (0, 0);
 
     while current < length {
         for i in current + 1..length {
-            if arr[i] < arr[smallest] {
-                smallest = i;
+            if arr[i] < arr[minimum] {
+                minimum = i;
             }
         }
-        let temp = arr[current];
-        arr[current] = arr[smallest];
-        arr[smallest] = temp;
+        arr.swap(current, minimum);
 
         current += 1;
-        smallest = current;
+        minimum = current;
     }
 }
 

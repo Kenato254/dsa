@@ -12,7 +12,7 @@
 ///
 /// * `arr` - A mutable reference to the vector to be sorted. The elements must be
 
-pub fn sort(arr: &mut Vec<i32>) {
+pub fn sort<T: Ord>(arr: &mut [T]) {
     let mut swap = true;
     let length = arr.len();
 
@@ -20,9 +20,7 @@ pub fn sort(arr: &mut Vec<i32>) {
         swap = false;
         for i in 1..length {
             if arr[i - 1] > arr[i] {
-                let temp = arr[i - 1];
-                arr[i - 1] = arr[i];
-                arr[i] = temp;
+                arr.swap(i-1, i);
                 swap = true;
             }
         }

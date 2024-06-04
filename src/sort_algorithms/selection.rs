@@ -9,7 +9,7 @@
 ///
 /// # Arguments
 ///
-/// * `arr` - A mutable reference to the vector to be sorted. The elements must be
+/// * `arr` - A mutable reference to the a type that implements `Ord` trait.
 
 pub fn sort<T: Ord>(arr: &mut [T]) {
     let length = arr.len();

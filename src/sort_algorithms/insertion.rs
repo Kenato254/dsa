@@ -7,24 +7,17 @@
 ///
 /// # Arguments
 ///
-/// * `arr` - A mutable reference to the vector of integers to be sorted.
-pub fn sort(arr: &mut Vec<i32>) {
-    let (length, mut sorted) = (arr.len(), 0);
-
-    while sorted < length - 1 {
-        let extract_unsorted_elem = arr.swap_remove(sorted + 1);
-        let mut fetch_sorted_index = sorted + 1;
-
-        for i in (0..sorted + 1).rev() {
-            if extract_unsorted_elem < arr[i] {
-                fetch_sorted_index -= 1;
-            }
+/// * `arr` - A mutable reference to the a type that implements `Ord` trait
+fn sort<T: Ord>(arr: &mut [T]) {
+    for i in 1..arr.len() {
+        let mut j = i;
+        while j > 0 && arr[j - 1] > arr[j] {
+            arr.swap(j - 1, j);
+            j -= 1;
         }
-
-        arr.insert(fetch_sorted_index, extract_unsorted_elem);
-        sorted += 1;
     }
 }
+
 
 #[cfg(test)]
 mod tests {

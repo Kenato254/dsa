@@ -1,6 +1,7 @@
 # Rust
 /target
-insertion.rs
+insertion_sort.rs
+
 # Python
 *.py
 .python-version
